@@ -1,0 +1,16 @@
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\bin\Release\TeaboyTimesheet.exe.config
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\bin\Release\TeaboyTimesheet.exe
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\bin\Release\TeaboyTimesheet.pdb
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\bin\Release\DocumentFormat.OpenXml.dll
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\bin\Release\DocumentFormat.OpenXml.Framework.dll
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\bin\Release\DocumentFormat.OpenXml.xml
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\bin\Release\DocumentFormat.OpenXml.Framework.xml
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.csproj.AssemblyReference.cache
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.Form1.resources
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.Properties.Resources.resources
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.csproj.GenerateResource.cache
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.csproj.CoreCompileInputs.cache
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTi.8215BF34.Up2Date
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.exe
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.pdb
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.exe.config

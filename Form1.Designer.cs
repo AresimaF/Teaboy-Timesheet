@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createNewDocumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openDocumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.inputClientName = new System.Windows.Forms.TextBox();
@@ -38,9 +41,11 @@
             this.inputDate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.createNewDocumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openDocumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.programInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -51,7 +56,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(532, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(523, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip";
             // 
@@ -65,8 +70,29 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // createNewDocumentToolStripMenuItem
+            // 
+            this.createNewDocumentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
+            this.createNewDocumentToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.createNewDocumentToolStripMenuItem.Name = "createNewDocumentToolStripMenuItem";
+            this.createNewDocumentToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.createNewDocumentToolStripMenuItem.Text = "Create New Document";
+            this.createNewDocumentToolStripMenuItem.Click += new System.EventHandler(this.createNewDocumentToolStripMenuItem_Click);
+            // 
+            // openDocumentToolStripMenuItem
+            // 
+            this.openDocumentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
+            this.openDocumentToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.openDocumentToolStripMenuItem.Name = "openDocumentToolStripMenuItem";
+            this.openDocumentToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.openDocumentToolStripMenuItem.Text = "Open Document Location";
+            this.openDocumentToolStripMenuItem.Click += new System.EventHandler(this.openDocumentToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contactSupportToolStripMenuItem,
+            this.programInfoToolStripMenuItem});
             this.helpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
@@ -145,29 +171,42 @@
             this.buttonAdd.TabIndex = 7;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // createNewDocumentToolStripMenuItem
+            // contactSupportToolStripMenuItem
             // 
-            this.createNewDocumentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
-            this.createNewDocumentToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createNewDocumentToolStripMenuItem.Name = "createNewDocumentToolStripMenuItem";
-            this.createNewDocumentToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.createNewDocumentToolStripMenuItem.Text = "Create New Document";
+            this.contactSupportToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
+            this.contactSupportToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.contactSupportToolStripMenuItem.Name = "contactSupportToolStripMenuItem";
+            this.contactSupportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contactSupportToolStripMenuItem.Text = "Contact Support";
+            this.contactSupportToolStripMenuItem.Click += new System.EventHandler(this.contactSupportToolStripMenuItem_Click);
             // 
-            // openDocumentToolStripMenuItem
+            // programInfoToolStripMenuItem
             // 
-            this.openDocumentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
-            this.openDocumentToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.openDocumentToolStripMenuItem.Name = "openDocumentToolStripMenuItem";
-            this.openDocumentToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.openDocumentToolStripMenuItem.Text = "Open Document";
+            this.programInfoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
+            this.programInfoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.programInfoToolStripMenuItem.Name = "programInfoToolStripMenuItem";
+            this.programInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.programInfoToolStripMenuItem.Text = "Program Info";
+            this.programInfoToolStripMenuItem.Click += new System.EventHandler(this.programInfoToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TeaboyTimesheet.Properties.Resources.matcheeb;
+            this.pictureBox1.Location = new System.Drawing.Point(367, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(165, 244);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(532, 159);
+            this.ClientSize = new System.Drawing.Size(523, 159);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.inputDate);
             this.Controls.Add(this.label3);
@@ -176,12 +215,15 @@
             this.Controls.Add(this.inputClientName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Teaboy Timesheet";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,6 +243,9 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ToolStripMenuItem createNewDocumentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openDocumentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contactSupportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem programInfoToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

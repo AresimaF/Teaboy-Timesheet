@@ -11,6 +11,10 @@ namespace TeaboyTimesheet
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+
+        public static FileMinion minion = new FileMinion();
+
         [STAThread]
         static void Main()
         {

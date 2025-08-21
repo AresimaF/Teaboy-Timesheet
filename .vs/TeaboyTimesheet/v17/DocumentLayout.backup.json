@@ -3,20 +3,26 @@
   "WorkspaceRootPath": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TeaboyTimesheet||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|d:\\development\\projects\\teaboytimesheet\\teaboytimesheet\\fileminion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:fileminion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|d:\\development\\projects\\teaboytimesheet\\teaboytimesheet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|d:\\development\\projects\\teaboytimesheet\\teaboytimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|d:\\development\\projects\\teaboytimesheet\\teaboytimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|d:\\development\\projects\\teaboytimesheet\\teaboytimesheet\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +32,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -43,13 +49,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwDwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T22:10:57.249Z",
               "IsPinned": true,
@@ -57,26 +63,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "TeaboyTimesheet",
+              "DocumentMoniker": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\TeaboyTimesheet.csproj",
+              "RelativeDocumentMoniker": "TeaboyTimesheet.csproj",
+              "ToolTip": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\TeaboyTimesheet.csproj*",
+              "RelativeToolTip": "TeaboyTimesheet.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-21T20:01:04.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FileMinion.cs",
               "DocumentMoniker": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\FileMinion.cs",
               "RelativeDocumentMoniker": "FileMinion.cs",
               "ToolTip": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\FileMinion.cs",
               "RelativeToolTip": "FileMinion.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAswDYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T21:41:02.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T21:40:04.321Z",
               "EditorCaption": ""
