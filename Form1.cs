@@ -91,6 +91,7 @@ namespace TeaboyTimesheet
             if (e.KeyChar == '\r')
             {
                 SendNewLog();
+                e.Handled = true;
             }
         }
 
@@ -99,6 +100,7 @@ namespace TeaboyTimesheet
             if (e.KeyChar == '\r')
             {
                 SendNewLog();
+                e.Handled = true;
             }
         }
     }

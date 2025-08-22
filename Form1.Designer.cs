@@ -123,7 +123,7 @@
             this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 4;
             this.label1.Text = "Client Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -135,7 +135,7 @@
             this.inputClientName.Location = new System.Drawing.Point(15, 52);
             this.inputClientName.Name = "inputClientName";
             this.inputClientName.Size = new System.Drawing.Size(170, 20);
-            this.inputClientName.TabIndex = 2;
+            this.inputClientName.TabIndex = 1;
             this.inputClientName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputClientName_KeyPress);
             // 
             // inputHours
@@ -146,7 +146,7 @@
             this.inputHours.Location = new System.Drawing.Point(206, 52);
             this.inputHours.Name = "inputHours";
             this.inputHours.Size = new System.Drawing.Size(170, 20);
-            this.inputHours.TabIndex = 4;
+            this.inputHours.TabIndex = 2;
             this.inputHours.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputHours_KeyPress);
             // 
             // label2
@@ -156,7 +156,7 @@
             this.label2.Location = new System.Drawing.Point(203, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Hours";
             // 
             // inputDate
@@ -168,7 +168,7 @@
             this.inputDate.Name = "inputDate";
             this.inputDate.ReadOnly = true;
             this.inputDate.Size = new System.Drawing.Size(114, 20);
-            this.inputDate.TabIndex = 6;
+            this.inputDate.TabIndex = 7;
             // 
             // label3
             // 
@@ -177,7 +177,7 @@
             this.label3.Location = new System.Drawing.Point(392, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 5;
+            this.label3.TabIndex = 6;
             this.label3.Text = "Current Date";
             // 
             // buttonAdd
@@ -188,7 +188,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(221, 90);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(89, 57);
-            this.buttonAdd.TabIndex = 7;
+            this.buttonAdd.TabIndex = 3;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
