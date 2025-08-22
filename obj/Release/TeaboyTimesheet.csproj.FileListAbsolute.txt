@@ -14,3 +14,4 @@ D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTi.821
 D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.exe
 D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.pdb
 D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.exe.config
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Release\TeaboyTimesheet.g.resources

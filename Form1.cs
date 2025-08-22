@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Office2016.Drawing.Command;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,28 +8,28 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Media;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace TeaboyTimesheet
 {
     public partial class Form1 : Form
     {
+    SoundPlayer snd = new SoundPlayer(Properties.Resources.Custom_Ding);
+        
+
         public Form1()
         {
             InitializeComponent();
             inputDate.Text = DateTime.Now.ToString("MM/dd/yy");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        private void SendNewLog()
         {
-
             //Try convert
             decimal Hours;
             try
@@ -45,13 +46,24 @@ namespace TeaboyTimesheet
             inputClientName.Text = "";
             inputHours.Text = "";
 
-            SystemSounds.Beep.Play();
+            snd.Play();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            SendNewLog();
+            
         }
 
         private void createNewDocumentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.minion.FreshLog();
-            SystemSounds.Beep.Play();
+            snd.Play();
         }
 
         private void openDocumentToolStripMenuItem_Click(object sender, EventArgs e)
@@ -74,6 +86,20 @@ namespace TeaboyTimesheet
             MessageBox.Show("Code by Aresima. \nMatcha images made by https://bsky.app/profile/xo-ziel.bsky.social", "Info", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
-        
+        private void inputClientName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                SendNewLog();
+            }
+        }
+
+        private void inputHours_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '\r')
+            {
+                SendNewLog();
+            }
+        }
     }
 }

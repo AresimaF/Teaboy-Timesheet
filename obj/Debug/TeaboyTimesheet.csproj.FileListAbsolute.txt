@@ -14,3 +14,4 @@ D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Debug\TeaboyTi.8215B
 D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Debug\TeaboyTimesheet.exe
 D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Debug\TeaboyTimesheet.pdb
 D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Debug\TeaboyTimesheet.exe.config
+D:\Development\Projects\TeaboyTimesheet\TeaboyTimesheet\obj\Debug\TeaboyTimesheet.g.resources

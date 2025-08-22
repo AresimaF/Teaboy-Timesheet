@@ -2,6 +2,7 @@
 using DocumentFormat.OpenXml.Office2016.Excel;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -74,11 +75,17 @@ namespace TeaboyTimesheet
             // Add Sheets to the Workbook.
             Sheets sheets = WBPart.Workbook.AppendChild(new Sheets());
 
+            // Add styles to the WorkbookPart
+            WorkbookStylesPart StylePart = WBPart.AddNewPart<WorkbookStylesPart>();
+
             /* Append a new worksheet and associate it with the workbook.
             Sheet sheet = new Sheet() { Id = WBPart.GetIdOfPart(worksheetPart), SheetId = 1, Name = Now.ToString("MMMM yyyy") };
             sheets.Append(sheet);*/
 
-            
+            WBPart.WorkbookStylesPart.Stylesheet = GenerateStyleSheet();
+            Borders borders = WBPart.WorkbookStylesPart.Stylesheet.Elements<Borders>().First();
+            borders.Append(GenerateBorder());
+
 
             Logfile = newFile;
             Workbook = WBPart.Workbook;
@@ -130,7 +137,7 @@ namespace TeaboyTimesheet
 
             Columns lstColumns = new Columns();
             lstColumns.Append(new Column() { Min = 1, Max = 1, Width = 25, CustomWidth = true });
-            lstColumns.Append(new Column() { Min = 2, Max = 2, Width = 12, CustomWidth = true });
+            lstColumns.Append(new Column() { Min = 2, Max = 2, Width = 15, CustomWidth = true });
             lstColumns.Append(new Column() { Min = 3, Max = 3, Width = 12, CustomWidth = true });
             worksheetPart.Worksheet.InsertAt(lstColumns, 0);
 
@@ -229,6 +236,110 @@ namespace TeaboyTimesheet
             System.IO.File.Move(DefaultLogFilePath, Path.Combine(DefaultLogFolderPath, "TeaboyTimesheet_Old_" + DateTime.Now.ToString("MM-dd-yy") + ".xlsx"));
 
             CreateNewLogFile();
+        }
+
+        public Border GenerateBorder()
+        {
+            Border border2 = new Border();
+
+            LeftBorder leftBorder2 = new LeftBorder() { Style = BorderStyleValues.Thin };
+            Color color1 = new Color() { Indexed = (UInt32Value)64U };
+
+            leftBorder2.Append(color1);
+
+            RightBorder rightBorder2 = new RightBorder() { Style = BorderStyleValues.Thin };
+            Color color2 = new Color() { Indexed = (UInt32Value)64U };
+
+            rightBorder2.Append(color2);
+
+            TopBorder topBorder2 = new TopBorder() { Style = BorderStyleValues.Thin };
+            Color color3 = new Color() { Indexed = (UInt32Value)64U };
+
+            topBorder2.Append(color3);
+
+            BottomBorder bottomBorder2 = new BottomBorder() { Style = BorderStyleValues.Thin };
+            Color color4 = new Color() { Indexed = (UInt32Value)64U };
+
+            bottomBorder2.Append(color4);
+            DiagonalBorder diagonalBorder2 = new DiagonalBorder();
+
+            border2.Append(leftBorder2);
+            border2.Append(rightBorder2);
+            border2.Append(topBorder2);
+            border2.Append(bottomBorder2);
+            border2.Append(diagonalBorder2);
+
+            return border2;
+        }
+
+        private Stylesheet GenerateStyleSheet()
+        {
+
+            var stylesheet = new Stylesheet();
+
+            //tried adding attributes too
+            /*
+            var stylesheet = new Stylesheet() { MCAttributes = new MarkupCompatibilityAttributes() { Ignorable = "x14ac" } };
+            stylesheet.AddNamespaceDeclaration("r", "http://schemas.openxmlformats.org/officeDocument/2006/relationships");
+            stylesheet.AddNamespaceDeclaration("mc", "http://schemas.openxmlformats.org/markup-compatibility/2006");
+            stylesheet.AddNamespaceDeclaration("x14ac", "http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac");
+           */
+
+            var fonts = new Fonts() { Count = (UInt32Value)1U, KnownFonts = BooleanValue.FromBoolean(true) };
+            var font = new Font
+            {
+                FontSize = new FontSize() { Val = 11D },
+                FontName = new FontName() { Val = "Calibri" },
+                Color = new Color() { Theme = (UInt32Value)1U },
+                FontFamilyNumbering = new FontFamilyNumbering() { Val = 2 },
+                FontScheme = new FontScheme() { Val = new EnumValue<FontSchemeValues>(FontSchemeValues.Minor) }
+            };
+            fonts.Append(font);
+
+            var fills = new Fills() { Count = 1 };
+            var fill = new Fill();
+            fill.PatternFill = new PatternFill() { PatternType = new EnumValue<PatternValues>(PatternValues.None) };
+            fills.Append(fill);
+
+            var borders = new Borders() { Count = 1 };
+            Border border2 = new Border();
+
+            LeftBorder leftBorder2 = new LeftBorder() { Style = BorderStyleValues.Thin };
+            Color color1 = new Color() { Indexed = (UInt32Value)64U };
+
+            leftBorder2.Append(color1);
+
+            RightBorder rightBorder2 = new RightBorder() { Style = BorderStyleValues.Thin };
+            Color color2 = new Color() { Indexed = (UInt32Value)64U };
+
+            rightBorder2.Append(color2);
+
+            TopBorder topBorder2 = new TopBorder() { Style = BorderStyleValues.Thin };
+            Color color3 = new Color() { Indexed = (UInt32Value)64U };
+
+            topBorder2.Append(color3);
+
+            BottomBorder bottomBorder2 = new BottomBorder() { Style = BorderStyleValues.Thin };
+            Color color4 = new Color() { Indexed = (UInt32Value)64U };
+
+            bottomBorder2.Append(color4);
+            DiagonalBorder diagonalBorder2 = new DiagonalBorder();
+            borders.Append(border2);
+
+            var cellFormats = new CellFormats(
+                    new CellFormat() { NumberFormatId = 0, FormatId = 0, FontId = 0, FillId = 0, BorderId = 0 }, // Index 0
+                    new CellFormat() { NumberFormatId = 0, FormatId = 0, FontId = 1, FillId = 0, BorderId = 0, ApplyFont = true }, //Index 1 Bold
+                    new CellFormat() { NumberFormatId = 0, FormatId = 0, FontId = 2, FillId = 0, BorderId = 0, ApplyFont = true }, //Index 2 Italics
+                    new CellFormat() { NumberFormatId = 22, FormatId = 0, FontId = 0, BorderId = 0, FillId = 0, ApplyNumberFormat = BooleanValue.FromBoolean(true) } //Index 3 Date
+                    );
+
+
+            stylesheet.Append(fonts);
+            stylesheet.Append(fills);
+            stylesheet.Append(borders);
+            stylesheet.Append(cellFormats);
+
+            return stylesheet;
         }
     }
 }

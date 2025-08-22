@@ -34,6 +34,8 @@
             this.createNewDocumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openDocumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.programInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.inputClientName = new System.Windows.Forms.TextBox();
             this.inputHours = new System.Windows.Forms.TextBox();
@@ -41,8 +43,6 @@
             this.inputDate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.contactSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.programInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,6 +98,24 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // contactSupportToolStripMenuItem
+            // 
+            this.contactSupportToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
+            this.contactSupportToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.contactSupportToolStripMenuItem.Name = "contactSupportToolStripMenuItem";
+            this.contactSupportToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.contactSupportToolStripMenuItem.Text = "Contact Support";
+            this.contactSupportToolStripMenuItem.Click += new System.EventHandler(this.contactSupportToolStripMenuItem_Click);
+            // 
+            // programInfoToolStripMenuItem
+            // 
+            this.programInfoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
+            this.programInfoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.programInfoToolStripMenuItem.Name = "programInfoToolStripMenuItem";
+            this.programInfoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.programInfoToolStripMenuItem.Text = "Program Info";
+            this.programInfoToolStripMenuItem.Click += new System.EventHandler(this.programInfoToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -118,6 +136,7 @@
             this.inputClientName.Name = "inputClientName";
             this.inputClientName.Size = new System.Drawing.Size(170, 20);
             this.inputClientName.TabIndex = 2;
+            this.inputClientName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputClientName_KeyPress);
             // 
             // inputHours
             // 
@@ -128,6 +147,7 @@
             this.inputHours.Name = "inputHours";
             this.inputHours.Size = new System.Drawing.Size(170, 20);
             this.inputHours.TabIndex = 4;
+            this.inputHours.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputHours_KeyPress);
             // 
             // label2
             // 
@@ -172,24 +192,6 @@
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
-            // contactSupportToolStripMenuItem
-            // 
-            this.contactSupportToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
-            this.contactSupportToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.contactSupportToolStripMenuItem.Name = "contactSupportToolStripMenuItem";
-            this.contactSupportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.contactSupportToolStripMenuItem.Text = "Contact Support";
-            this.contactSupportToolStripMenuItem.Click += new System.EventHandler(this.contactSupportToolStripMenuItem_Click);
-            // 
-            // programInfoToolStripMenuItem
-            // 
-            this.programInfoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
-            this.programInfoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.programInfoToolStripMenuItem.Name = "programInfoToolStripMenuItem";
-            this.programInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.programInfoToolStripMenuItem.Text = "Program Info";
-            this.programInfoToolStripMenuItem.Click += new System.EventHandler(this.programInfoToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
