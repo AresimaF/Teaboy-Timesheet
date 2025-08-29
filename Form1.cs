@@ -25,6 +25,7 @@ namespace TeaboyTimesheet
         {
             InitializeComponent();
             inputDate.Text = DateTime.Now.ToString("MM/dd/yy");
+            inputHours.Text = "0";
 
         }
 
@@ -44,7 +45,7 @@ namespace TeaboyTimesheet
 
             Program.minion.AddNewEntry(inputClientName.Text, Convert.ToDecimal(inputHours.Text), DateTime.Now);
             inputClientName.Text = "";
-            inputHours.Text = "";
+            inputHours.Text = "0";
 
             snd.Play();
         }

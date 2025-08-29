@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|d:\\development\\projects\\teaboytimesheet\\teaboytimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|d:\\development\\projects\\teaboytimesheet\\teaboytimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0BBDD7B6-9689-4279-8C8D-0DB733C0C6E4}|TeaboyTimesheet.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Development\\Projects\\TeaboyTimesheet\\TeaboyTimesheet\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAIAwwGsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAIA9wHIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-20T22:10:57.249Z",
               "IsPinned": true,
