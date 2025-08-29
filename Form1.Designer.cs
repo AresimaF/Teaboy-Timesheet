@@ -44,6 +44,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonPetty = new System.Windows.Forms.Button();
+            this.togglePettinessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +66,8 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.createNewDocumentToolStripMenuItem,
-            this.openDocumentToolStripMenuItem});
+            this.openDocumentToolStripMenuItem,
+            this.togglePettinessToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -203,12 +206,36 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonPetty
+            // 
+            this.buttonPetty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(143)))), ((int)(((byte)(135)))));
+            this.buttonPetty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPetty.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonPetty.Location = new System.Drawing.Point(15, 78);
+            this.buttonPetty.Name = "buttonPetty";
+            this.buttonPetty.Size = new System.Drawing.Size(78, 21);
+            this.buttonPetty.TabIndex = 9;
+            this.buttonPetty.Text = "$$$";
+            this.buttonPetty.UseVisualStyleBackColor = false;
+            this.buttonPetty.Visible = false;
+            this.buttonPetty.Click += new System.EventHandler(this.buttonPetty_Click);
+            // 
+            // togglePettinessToolStripMenuItem
+            // 
+            this.togglePettinessToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
+            this.togglePettinessToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.togglePettinessToolStripMenuItem.Name = "togglePettinessToolStripMenuItem";
+            this.togglePettinessToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.togglePettinessToolStripMenuItem.Text = "Toggle Pettiness";
+            this.togglePettinessToolStripMenuItem.Click += new System.EventHandler(this.togglePettinessToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(523, 159);
+            this.Controls.Add(this.buttonPetty);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.inputDate);
             this.Controls.Add(this.label3);
@@ -248,6 +275,8 @@
         private System.Windows.Forms.ToolStripMenuItem contactSupportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem programInfoToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem togglePettinessToolStripMenuItem;
+        private System.Windows.Forms.Button buttonPetty;
     }
 }
 

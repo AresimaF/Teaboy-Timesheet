@@ -103,5 +103,28 @@ namespace TeaboyTimesheet
                 e.Handled = true;
             }
         }
+
+        private void togglePettinessToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (buttonPetty.Visible == true)
+            {
+                buttonPetty.Visible = false;
+            }
+            else
+            {
+                buttonPetty.Visible = true;
+            }
+        }
+
+        private void buttonPetty_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                inputHours.Text = (Convert.ToDecimal(inputHours.Text) + 0.1m).ToString();
+                snd.Play();
+            }
+            catch { }
+            
+        }
     }
 }
